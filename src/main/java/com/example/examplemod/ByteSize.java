@@ -17,11 +17,10 @@ import java.util.List;
 
 public class ByteSize {
     ItemStack stack;
-    String result = "aaaa";
+    String result;
     @SubscribeEvent
     public void eventRenderTooltip(RenderTooltipEvent.PostText event) { //ItemTooltipEvent
         stack = event.getStack();
-        //NBTTagCompound tagCompound = stack.getTagCompound();
         result=execute();
         if(Keyboard.isKeyDown(Keyboard.KEY_V) && Minecraft.getMinecraft().player.ticksExisted%3==0 && (Minecraft.getMinecraft().currentScreen != null)){
             Minecraft.getMinecraft().player.sendMessage(new TextComponentString(result));
