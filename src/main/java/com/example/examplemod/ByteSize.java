@@ -16,10 +16,9 @@ public class ByteSize {
     @SubscribeEvent
     public void eventRenderTooltip(ItemTooltipEvent event) { //ItemTooltipEvent   RenderTooltipEvent.PostText event
         stack = event.getItemStack();
-        event.getToolTip().add(execute());
+        event.getToolTip().add(getTag());
     }
-
-    public String execute() {
+    public String getTag() {
         if(stack.isEmpty()) return "invalid tag";
         if(ByteSize.getItemSize(stack)<1024){
             return ByteSize.getItemSize(stack) + " bytes";
