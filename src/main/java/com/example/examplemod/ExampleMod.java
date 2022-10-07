@@ -27,7 +27,6 @@ public class ExampleMod
     @EventHandler
     public void init(FMLInitializationEvent event)
     {
-        MinecraftForge.EVENT_BUS.register(new Ui());
         MinecraftForge.EVENT_BUS.register(new ByteSize());
     }
 
