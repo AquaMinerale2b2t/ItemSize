@@ -1,0 +1,16 @@
+[
+{
+  "modid": "itemsize",
+  "name": "Item Size mod",
+  "description": "EXSHONEEEEEEEEEEK ON TOP SYKA",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["MINERAL WATER"],
+  "credits": "KISS MY ASS",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
