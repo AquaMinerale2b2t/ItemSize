@@ -22,9 +22,7 @@ public class ByteSize {
         if(stack.isEmpty()) return "invalid tag";
         if(ByteSize.getItemSize(stack)<1024){
             return ByteSize.getItemSize(stack) + " bytes";
-        }else{
-            return Double.parseDouble(f.format((double) ByteSize.getItemSize(stack)/1024)) + " kilobytes";
-        }
+        }else return Double.parseDouble(f.format((double) ByteSize.getItemSize(stack) / 1024)) + " kilobytes";
     }
     public static int getItemSize(ItemStack stack) {
         PacketBuffer buffer = new PacketBuffer(Unpooled.buffer());
