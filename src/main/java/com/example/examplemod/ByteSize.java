@@ -18,12 +18,10 @@ import java.util.List;
 
 public class ByteSize {
     ItemStack stack;
-    String result;
     DecimalFormat f = new DecimalFormat("##.00");
     @SubscribeEvent
     public void eventRenderTooltip(ItemTooltipEvent event) { //ItemTooltipEvent   RenderTooltipEvent.PostText event
         stack = event.getItemStack();
-        result=execute();
         event.getToolTip().add(execute());
     }
 
